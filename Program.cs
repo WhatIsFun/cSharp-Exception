@@ -39,6 +39,14 @@
             Console.WriteLine("Enter second number>>> ");
             int sNumber = Convert.ToInt32(Console.ReadLine());
             divide(fNumber, sNumber);
+            Console.WriteLine();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("&& & Task 2 & &&");
+            Console.WriteLine("Enter your age >>> ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            ageChecker(age);
+            Console.WriteLine();
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
         }
 
         //static float divide (int a, int b)
@@ -60,16 +68,38 @@
         {
             try
             {
-                Console.WriteLine (fNumber / sNumber);
-            }catch (DivideByZeroException e)
+                Console.WriteLine(fNumber / sNumber);
+            } catch (DivideByZeroException e)
             {
                 Console.WriteLine("Cant Divide by zero");
-            }catch (Exception e)
+            } catch (Exception e)
             {
                 Console.WriteLine("!! Invalid Input !!");
             }
         }
         // Task 2: Create a program that prompts the user to enter their age.
         // Use exception handling to handle cases where the user enters an invalid age, such as a negative number or non-numeric input.
+        static void ageChecker(int age)
+        {
+            try
+            {
+                if (age > 0)
+                {
+                    Console.WriteLine("Your age is "+ age);
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a positive number.");
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Please enter a valid number.");
+            }
+
+
+        }
+            
     }
+
 }
