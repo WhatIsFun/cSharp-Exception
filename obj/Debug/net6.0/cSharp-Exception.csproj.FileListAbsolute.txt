@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\bin\Debug\net6.0\cSharp-Exception.exe
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\bin\Debug\net6.0\cSharp-Exception.deps.json
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\bin\Debug\net6.0\cSharp-Exception.runtimeconfig.json
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\bin\Debug\net6.0\cSharp-Exception.dll
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\bin\Debug\net6.0\cSharp-Exception.pdb
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.AssemblyInfo.cs
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.dll
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\refint\cSharp-Exception.dll
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.pdb
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\cSharp-Exception.genruntimeconfig.cache
+C:\Users\user\Desktop\code-TRA\git-starter\cSharp-Exception\obj\Debug\net6.0\ref\cSharp-Exception.dll
