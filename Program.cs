@@ -39,39 +39,37 @@ namespace cSharp_Exception
             //Console.WriteLine(divide(3, 6));
 
             //Task 1:
-            //Console.WriteLine("&& & Task 1 & &&");
-            //Console.WriteLine("Enter first number>>> ");
-            //int fNumber = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Enter second number>>> ");
-            //int sNumber = Convert.ToInt32(Console.ReadLine());
-            //Divide(fNumber, sNumber);
-            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            //Console.WriteLine();
-            ////Task 2:
-            //Console.WriteLine("&& & Task 2 & &&");
-            //Console.WriteLine("Enter your age >>> ");
-            //int age = Convert.ToInt32(Console.ReadLine());
-            //AgeChecker(age);
-            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            //Console.WriteLine();
-            ////Task 3:
-            //Console.WriteLine("&& & Task 3 & &&");
-            //Console.Write("Enter your file path: ");
-            //string filePath = Console.ReadLine();
-            //FilePath(filePath);
-            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            //Console.WriteLine();
-            ////Task 4:
-            //Console.WriteLine("&& & Task 4 & &&");
-            //Console.Write("Enter a number: ");
-            //string input = Console.ReadLine();
-            //NumericValues(input);
-            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            //Console.WriteLine();
+            Console.WriteLine("&& & Task 1 & &&");
+            Console.WriteLine("Enter first number>>> ");
+            int fNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number>>> ");
+            int sNumber = Convert.ToInt32(Console.ReadLine());
+            Divide(fNumber, sNumber);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
+            //Task 2:
+            Console.WriteLine("&& & Task 2 & &&");
+            Console.WriteLine("Enter your age >>> ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            AgeChecker(age);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
+            //Task 3:
+            Console.WriteLine("&& & Task 3 & &&");
+            Console.Write("Enter your file path: ");
+            string filePath = Console.ReadLine();
+            FilePath(filePath);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
+            //Task 4:
+            Console.WriteLine("&& & Task 4 & &&");
+            Console.Write("Enter a number: ");
+            string input = Console.ReadLine();
+            NumericValues(input);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
             //Task 5:
             Console.WriteLine("&& & Task 5 & &&");
-            //Console.Write("Enter a number between 1 and 100: ");
-            //string guessNumber = Console.ReadLine();
             GuessingNumber();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine();
@@ -195,7 +193,7 @@ namespace cSharp_Exception
                     else if (guess == randomNumber)
                     {
                         ++count;
-                        Console.WriteLine("Congratulations! You guessed the number"+ randomNumber + " After " + count + "tries");
+                        Console.WriteLine("Congratulations! You guessed the number"+ randomNumber + " After " + count + " tries.");
                         break;
                     }
                     else if (guess < randomNumber)
