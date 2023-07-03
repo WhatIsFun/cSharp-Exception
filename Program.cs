@@ -1,4 +1,8 @@
-﻿using System.IO;
+﻿using System.ComponentModel;
+using System;
+using System.IO;
+using System.Reflection.Metadata;
+using System.Threading.Tasks;
 
 namespace cSharp_Exception
 {
@@ -34,7 +38,7 @@ namespace cSharp_Exception
             //Console.WriteLine(divide(2, 0));
             //Console.WriteLine(divide(3, 6));
 
-            ////Task 1:
+            //Task 1:
             //Console.WriteLine("&& & Task 1 & &&");
             //Console.WriteLine("Enter first number>>> ");
             //int fNumber = Convert.ToInt32(Console.ReadLine());
@@ -57,11 +61,18 @@ namespace cSharp_Exception
             //FilePath(filePath);
             //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
             //Console.WriteLine();
-            //Task 4:
-            Console.WriteLine("&& & Task 4 & &&");
-            Console.Write("Enter a number: ");
-            string input = Console.ReadLine();
-            NumericValues(input);
+            ////Task 4:
+            //Console.WriteLine("&& & Task 4 & &&");
+            //Console.Write("Enter a number: ");
+            //string input = Console.ReadLine();
+            //NumericValues(input);
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            //Console.WriteLine();
+            //Task 5:
+            Console.WriteLine("&& & Task 5 & &&");
+            //Console.Write("Enter a number between 1 and 100: ");
+            //string guessNumber = Console.ReadLine();
+            GuessingNumber();
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine();
         }
@@ -86,10 +97,12 @@ namespace cSharp_Exception
             try
             {
                 Console.WriteLine(fNumber / sNumber);
-            } catch (DivideByZeroException e)
+            }
+            catch (DivideByZeroException e)
             {
                 Console.WriteLine("Cant Divide by zero");
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 Console.WriteLine("!! Invalid Input !!");
             }
@@ -102,7 +115,7 @@ namespace cSharp_Exception
             {
                 if (age > 0)
                 {
-                    Console.WriteLine("Your age is "+ age);
+                    Console.WriteLine("Your age is " + age);
                 }
                 else
                 {
@@ -151,11 +164,57 @@ namespace cSharp_Exception
             {
                 int number = int.Parse(input);
                 Console.WriteLine("You enterd: " + number);
-            }catch(FormatException)
+            }
+            catch (FormatException)
             {
                 Console.WriteLine("Invalid input. Please enter a valid number.");
             }
         }
-    }
+        // Task 5: Write a program that generates a random number between 1 and 100.
+        // Ask the user to guess the number and handle any exceptions that may occur
+        // if the user enters an invalid input or if the guessed number is out of range.
+        static void GuessingNumber()
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(1, 101);
+            int count = 0;
+            while (true)
+            {
+                Console.Write("Guess a number between 1 and 100: ");
+                string guessNumber = Console.ReadLine();
 
+                try
+                {
+                    int guess = int.Parse(guessNumber);
+
+                    if (guess < 1 || guess > 100)
+                    {
+                        Console.WriteLine("Invalid input. Please enter a number between 1 and 100.");
+                        ++count;
+                    }
+                    else if (guess == randomNumber)
+                    {
+                        ++count;
+                        Console.WriteLine("Congratulations! You guessed the number"+ randomNumber + " After " + count + "tries");
+                        break;
+                    }
+                    else if (guess < randomNumber)
+                    {
+                        Console.WriteLine("higher. Try again.");
+                        ++count;
+                    }
+                    else
+                    {
+                        Console.WriteLine("lower. Try again.");
+                        ++count;
+                    }
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid input. Please enter a valid number.");
+                    ++count;
+                }
+            }
+        }
+    }
 }
