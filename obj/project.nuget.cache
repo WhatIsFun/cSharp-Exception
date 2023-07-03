@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MpQRTdmcYEBbvlynZrmkkMUMcVbs2pU90X27lrDWwOSjg9Hbbqnen0Xt8zkFJTS2PuLMdASBrUGRzAy+FC5udA==",
+  "dgSpecHash": "H6Y3zM9BUtK/Z5ZjcC/CgkwrZn/EsncVoMfP9lv5MV/LFyP4O+ttx+ItnRj8Hv98JiCo3tqh+9nY+3juAl0Dqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\code-TRA\\git-starter\\cSharp-Exception\\cSharp-Exception.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\moham\\Source\\Repos\\cSharp-Exception\\cSharp-Exception.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.18\\microsoft.netcore.app.host.win-x64.6.0.18.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,4 +1,6 @@
-﻿namespace cSharp_Exception
+﻿using System.IO;
+
+namespace cSharp_Exception
 {
     internal class Program
     {
@@ -38,15 +40,24 @@
             int fNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter second number>>> ");
             int sNumber = Convert.ToInt32(Console.ReadLine());
-            divide(fNumber, sNumber);
-            Console.WriteLine();
+            Divide(fNumber, sNumber);
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
+            //Task 2:
             Console.WriteLine("&& & Task 2 & &&");
             Console.WriteLine("Enter your age >>> ");
             int age = Convert.ToInt32(Console.ReadLine());
-            ageChecker(age);
-            Console.WriteLine();
+            AgeChecker(age);
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
+            //Task 3:
+            Console.WriteLine("&& & Task 3 & &&");
+            Console.Write("Enter your file path: ");
+            string filePath = Console.ReadLine();
+            FilePath(filePath);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine();
+
         }
 
         //static float divide (int a, int b)
@@ -64,7 +75,7 @@
 
         // Task 1: Write a program that asks the user to enter two numbers and divides the first number by the second number.
         // Handle any potential exceptions that may occur, such as divide-by-zero or invalid input.
-        static void divide(int fNumber, int sNumber)
+        static void Divide(int fNumber, int sNumber)
         {
             try
             {
@@ -79,7 +90,7 @@
         }
         // Task 2: Create a program that prompts the user to enter their age.
         // Use exception handling to handle cases where the user enters an invalid age, such as a negative number or non-numeric input.
-        static void ageChecker(int age)
+        static void AgeChecker(int age)
         {
             try
             {
@@ -96,10 +107,36 @@
             {
                 Console.WriteLine("Please enter a valid number.");
             }
-
-
         }
-            
+        // Task 3: Write a program that reads a file path from the user and attempts to open the file.
+        // Handle any potential exceptions that may occur, such as a file not found or access denied.
+        static void FilePath(string filePath)
+        {
+            try
+            {
+                using (StreamReader sR = File.OpenText(filePath))
+                {
+                    string s = "";
+                    while ((s = sR.ReadLine()) != null)
+                    {
+                        Console.WriteLine(s); // To display file contents
+                    }
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("The specified file was not found.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine("Access to the specified file was denied.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred while opening the file: " + ex.Message);
+            }
+        }
+
     }
 
 }
